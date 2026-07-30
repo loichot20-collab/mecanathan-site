@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prendre rendez-vous - MECANATHAN</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#0b0b0b;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    padding:30px 20px;
+    text-align:center;
+}
+
+h1{
+    color:#e30613;
+}
+
+.formulaire{
+    background:#171717;
+    padding:25px;
+    border-radius:12px;
+    max-width:400px;
+    margin:auto;
+    border-left:4px solid #e30613;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:6px;
+    border:none;
+    font-size:16px;
+}
+
+textarea{
+    height:120px;
+}
+
+button{
+    background:#e30613;
+    color:white;
+    padding:15px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.retour{
+    display:block;
+    margin-top:20px;
+    color:white;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>Prendre rendez-vous</h1>
+
+<p>
+Décrivez votre demande et je vous recontacte rapidement.
+</p>
+
+
+<div class="formulaire">
+
+<form action="https://formspree.io/f/TON_CODE" method="POST">
+
+<input
+type="text"
+name="Nom"
+placeholder="Nom *"
+required>
+
+<input
+type="text"
+name="Prénom"
+placeholder="Prénom *"
+required>
+
+<input
+type="email"
+name="Email"
+placeholder="Adresse e-mail *"
+required>
+
+<input
+type="text"
+name="Immatriculation"
+placeholder="Immatriculation du véhicule *"
+style="text-transform:uppercase;"
+required>
+
+<textarea
+name="Message"
+placeholder="Décrivez votre demande (panne, entretien, devis...) *"
+required></textarea>
+
+<button type="submit">
+📅 Envoyer ma demande de rendez-vous
+</button>
+
+</form>
+
+<a class="retour" href="index.html">
+⬅ Retour accueil
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
