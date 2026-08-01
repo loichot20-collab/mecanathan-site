@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin:0;
+    background:#111;
+    color:white;
+}
+
+header {
+    background:#000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo {
+    color:#e30613;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a {
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero {
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    padding:8%;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+    url("garage.jpg");
+    background-size:cover;
+}
+
+.hero h1 {
+    font-size:45px;
+}
+
+.hero p {
+    font-size:20px;
+}
+
+.button {
+    display:inline-block;
+    margin-top:20px;
+    background:#e30613;
+    color:white;
+    padding:15px 25px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section {
+    padding:50px 8%;
+}
+
+h2 {
+    color:#e30613;
+    text-align:center;
+    font-size:32px;
+}
+
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card {
+    background:#222;
+    padding:25px;
+    width:250px;
+    border-radius:10px;
+    border-top:4px solid #e30613;
+}
+
+.about, .zone {
+    background:#181818;
+}
+
+li {
+    margin:10px;
+}
+
+#contact {
+    text-align:center;
+}
+
+footer {
+    background:#000;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:700px){
+
+.hero h1 {
+    font-size:32px;
+}
+
+header {
+    flex-direction:column;
+}
+
+}
