@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MECANATHAN - Prestations mécaniques</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+/* MENU FIXE */
+
+.menu{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:9999;
+}
+
+.menu button{
+    background:#e30613;
+    color:white;
+    border:none;
+    font-size:30px;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+#menuMobile{
+    display:none;
+    position:absolute;
+    right:0;
+    top:55px;
+    background:#161616;
+    padding:15px;
+    border-radius:10px;
+    width:220px;
+}
+
+#menuMobile a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-bottom:1px solid #333;
+}
+
+#menuMobile a:hover{
+    color:#e30613;
+}
+
+
+/* CONTENU */
+
+header{
+    padding:80px 20px 40px;
+    text-align:center;
+    background:#000;
+}
+
+.logo{
+    width:180px;
+    max-width:80%;
+}
+
+h1{
+    margin-top:20px;
+    font-size:35px;
+}
+
+h1 span{
+    color:#e30613;
+}
+
+
+section{
+    padding:40px 20px;
+}
+
+
+h2{
+    text-align:center;
+    color:#e30613;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+
+.cards{
+
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+
+}
+
+
+.card{
+
+    background:#161616;
+    padding:25px;
+    border-radius:12px;
+    border-left:5px solid #e30613;
+
+}
+
+
+.card h3{
+
+    margin-bottom:10px;
+    font-size:22px;
+
+}
+
+
+.card p{
+
+    color:#ddd;
+    line-height:1.5;
+
+}
+
+
+/* CONTACT */
+
+.contact{
+
+    text-align:center;
+    background:#161616;
+
+}
+
+
+.button{
+
+    display:inline-block;
+    margin-top:20px;
+    background:#e30613;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+footer{
+
+    text-align:center;
+    padding:20px;
+    background:#000;
+    color:#aaa;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="menu">
+
+<button onclick="ouvrirMenu()">☰</button>
+
+<nav id="menuMobile">
+
+<a href="index.html">🏠 Accueil</a>
+
+<a href="prestations.html">🔧 Prestations</a>
+
+<a href="realisations.html">📸 Réalisations</a>
+
+<a href="avis.html">⭐ Avis clients</a>
+
+<a href="apropos.html">👨‍🔧 À propos</a>
+
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+</div>
+
+
+
+<header>
+
+<img src="logo.png" alt="Logo MecaNathan" class="logo">
+
+<h1>Nos <span>prestations</span></h1>
+
+<p>
+Mécanique automobile à domicile<br>
+Fleurance, Agen et alentours
+</p>
+
+</header>
+
+
+
+
+<section>
+
+
+<h2>Prestations mécaniques</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🔧 Vidange & entretien</h3>
+
+<p>
+Remplacement de l'huile moteur, filtres et contrôle général du véhicule.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🛑 Freinage</h3>
+
+<p>
+Remplacement des plaquettes, disques, contrôle et entretien du système de freinage.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>⚙️ Distribution</h3>
+
+<p>
+Remplacement des courroies de distribution et éléments associés.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>🚗 Embrayage</h3>
+
+<p>
+Diagnostic et remplacement des éléments liés à l'embrayage.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>🔩 Suspension & train roulant</h3>
+
+<p>
+Amortisseurs, rotules, triangles, biellettes et contrôle du train avant.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>💻 Diagnostic électronique</h3>
+
+<p>
+Recherche de panne avec diagnostic électronique et analyse des défauts.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>🔋 Batterie & démarrage</h3>
+
+<p>
+Contrôle et remplacement batterie, alternateur et système de charge.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🚘 Réparations diverses</h3>
+
+<p>
+Intervention sur différents travaux mécaniques selon les besoins du véhicule.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="contact">
+
+<h2>Besoin d'une intervention ?</h2>
+
+<p>
+Contactez-moi pour un devis gratuit.
+</p>
+
+
+<a class="button" href="tel:0651048069">
+📞 06 51 04 80 69
+</a>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 MecaNathan - Tous droits réservés
+</p>
+
+</footer>
+
+
+
+
+<script>
+
+function ouvrirMenu(){
+
+let menu = document.getElementById("menuMobile");
+
+
+if(menu.style.display === "block"){
+
+menu.style.display="none";
+
+}else{
+
+menu.style.display="block";
+
+}
+
+}
+
+</script>
+
+
+</body>
+
+</html>
