@@ -41,7 +41,6 @@ body{
     border-radius:8px;
 }
 
-
 #menuMobile{
     display:none;
     position:absolute;
@@ -53,7 +52,6 @@ body{
     width:220px;
 }
 
-
 #menuMobile a{
     display:block;
     color:white;
@@ -61,7 +59,6 @@ body{
     padding:12px;
     border-bottom:1px solid #333;
 }
-
 
 #menuMobile a:hover{
     color:#e30613;
@@ -77,18 +74,15 @@ header{
     background:#000;
 }
 
-
 .logo{
     width:180px;
     max-width:80%;
 }
 
-
 h1{
     margin-top:20px;
     font-size:35px;
 }
-
 
 h1 span{
     color:#e30613;
@@ -96,43 +90,66 @@ h1 span{
 
 
 
+/* AVIS */
+
 section{
-
     padding:40px 20px;
-
 }
 
 
 h2{
-
     text-align:center;
     color:#e30613;
     margin-bottom:30px;
+}
+
+
+.avis-box{
+
+    background:#171717;
+    padding:30px;
+    border-radius:15px;
+    border-left:5px solid #e30613;
+    text-align:center;
+    min-height:220px;
 
 }
 
 
+.google{
 
-/* AVIS */
-
-.avis{
-
-    background:#171717;
-    padding:25px;
-    border-radius:12px;
-    border-left:5px solid #e30613;
+    color:#4285F4;
+    font-size:18px;
     margin-bottom:20px;
 
 }
 
 
-.avis p{
+.etoiles{
 
-    color:#ddd;
-    line-height:1.5;
+    color:#FFD700;
+    font-size:25px;
+    margin-bottom:20px;
 
 }
 
+
+#nomClient{
+
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+
+}
+
+
+#texteAvis{
+
+    color:#ddd;
+    line-height:1.6;
+    font-size:17px;
+
+}
 
 
 .button{
@@ -142,7 +159,7 @@ background:#e30613;
 color:white;
 text-align:center;
 padding:15px;
-margin:30px auto;
+margin:35px auto;
 max-width:280px;
 border-radius:8px;
 text-decoration:none;
@@ -167,7 +184,6 @@ color:#aaa;
 </head>
 
 
-
 <body>
 
 
@@ -180,17 +196,11 @@ color:#aaa;
 <nav id="menuMobile">
 
 <a href="index.html">🏠 Accueil</a>
-
 <a href="prestations.html">🔧 Prestations</a>
-
 <a href="realisations.html">📸 Réalisations</a>
-
 <a href="avis.html">⭐ Avis clients</a>
-
 <a href="apropos.html">👨‍🔧 À propos</a>
-
 <a href="contact.html">📞 Contact</a>
-
 
 </nav>
 
@@ -199,19 +209,16 @@ color:#aaa;
 
 
 
-<header>
 
+<header>
 
 <img src="logo.png" class="logo" alt="Logo MecaNathan">
 
-
 <h1>Avis <span>clients</span></h1>
 
-
 <p>
-Votre satisfaction est ma priorité
+Découvrez les retours de nos clients
 </p>
-
 
 </header>
 
@@ -222,35 +229,32 @@ Votre satisfaction est ma priorité
 <section>
 
 
-<h2>Ils parlent de leur expérience</h2>
+<h2>⭐ Avis Google</h2>
 
 
 
-<div class="avis">
+<div class="avis-box">
 
-<p>
-⭐ Les avis clients apparaîtront ici après vos premières interventions.
-</p>
 
+<div class="google">
+Google Avis
 </div>
 
 
-
-<div class="avis">
-
-<p>
-🔧 Travail soigné, intervention rapide et service professionnel.
-</p>
-
+<div class="etoiles">
+⭐⭐⭐⭐⭐
 </div>
 
 
+<div id="nomClient">
+Chargement...
+</div>
 
-<div class="avis">
 
-<p>
-🚗 Une mécanique automobile simple, transparente et proche du client.
+<p id="texteAvis">
+Chargement des avis...
 </p>
+
 
 </div>
 
@@ -281,6 +285,8 @@ Votre satisfaction est ma priorité
 
 
 
+
+
 <script>
 
 
@@ -302,7 +308,54 @@ menu.style.display="block";
 }
 
 
+
+
+
+const avis = [
+
+
+{
+nom:"Armand Boutié",
+texte:"J’ai dû changer mes amortisseurs la veille d’un départ en vacances
+Et grâce à meca Nathan qui est rapide et à l’écoute je n’ai pas eu de retard sur mon départ"
+},
+
+
+{
+nom:"Ludovic serrano",
+texte:"Mécano super conpetant, disponible assez rapidement , je vous le conseille, très à l écoute du client, il fera au mieux pour vous dépanner et réparer votre véhicule"
+}
+
+
+];
+
+
+
+
+function changerAvis(){
+
+
+let nombre = Math.floor(Math.random() * avis.length);
+
+
+document.getElementById("nomClient").innerHTML = avis[nombre].nom;
+
+document.getElementById("texteAvis").innerHTML = avis[nombre].texte;
+
+
+}
+
+
+
+changerAvis();
+
+
+setInterval(changerAvis,5000);
+
+
+
 </script>
+
 
 
 
