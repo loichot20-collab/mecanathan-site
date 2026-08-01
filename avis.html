@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MECANATHAN - Avis clients</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+
+/* MENU */
+
+.menu{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:9999;
+}
+
+.menu button{
+    background:#e30613;
+    color:white;
+    border:none;
+    font-size:30px;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+
+#menuMobile{
+    display:none;
+    position:absolute;
+    right:0;
+    top:55px;
+    background:#161616;
+    padding:15px;
+    border-radius:10px;
+    width:220px;
+}
+
+
+#menuMobile a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-bottom:1px solid #333;
+}
+
+
+#menuMobile a:hover{
+    color:#e30613;
+}
+
+
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:80px 20px 40px;
+    background:#000;
+}
+
+
+.logo{
+    width:180px;
+    max-width:80%;
+}
+
+
+h1{
+    margin-top:20px;
+    font-size:35px;
+}
+
+
+h1 span{
+    color:#e30613;
+}
+
+
+
+section{
+
+    padding:40px 20px;
+
+}
+
+
+h2{
+
+    text-align:center;
+    color:#e30613;
+    margin-bottom:30px;
+
+}
+
+
+
+/* AVIS */
+
+.avis{
+
+    background:#171717;
+    padding:25px;
+    border-radius:12px;
+    border-left:5px solid #e30613;
+    margin-bottom:20px;
+
+}
+
+
+.avis p{
+
+    color:#ddd;
+    line-height:1.5;
+
+}
+
+
+
+.button{
+
+display:block;
+background:#e30613;
+color:white;
+text-align:center;
+padding:15px;
+margin:30px auto;
+max-width:280px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+footer{
+
+text-align:center;
+padding:20px;
+background:#000;
+color:#aaa;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="menu">
+
+<button onclick="ouvrirMenu()">☰</button>
+
+
+<nav id="menuMobile">
+
+<a href="index.html">🏠 Accueil</a>
+
+<a href="prestations.html">🔧 Prestations</a>
+
+<a href="realisations.html">📸 Réalisations</a>
+
+<a href="avis.html">⭐ Avis clients</a>
+
+<a href="apropos.html">👨‍🔧 À propos</a>
+
+<a href="contact.html">📞 Contact</a>
+
+
+</nav>
+
+</div>
+
+
+
+
+<header>
+
+
+<img src="logo.png" class="logo" alt="Logo MecaNathan">
+
+
+<h1>Avis <span>clients</span></h1>
+
+
+<p>
+Votre satisfaction est ma priorité
+</p>
+
+
+</header>
+
+
+
+
+
+<section>
+
+
+<h2>Ils parlent de leur expérience</h2>
+
+
+
+<div class="avis">
+
+<p>
+⭐ Les avis clients apparaîtront ici après vos premières interventions.
+</p>
+
+</div>
+
+
+
+<div class="avis">
+
+<p>
+🔧 Travail soigné, intervention rapide et service professionnel.
+</p>
+
+</div>
+
+
+
+<div class="avis">
+
+<p>
+🚗 Une mécanique automobile simple, transparente et proche du client.
+</p>
+
+</div>
+
+
+
+<a class="button" href="https://g.page/r/CQTroFZJ9D2tEBI/review">
+
+⭐ Laisser un avis Google
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 MecaNathan - Tous droits réservés
+</p>
+
+</footer>
+
+
+
+
+<script>
+
+
+function ouvrirMenu(){
+
+let menu=document.getElementById("menuMobile");
+
+
+if(menu.style.display==="block"){
+
+menu.style.display="none";
+
+}else{
+
+menu.style.display="block";
+
+}
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
