@@ -16,6 +16,7 @@ body{
     color:white;
 }
 header{
+    position:relative;
     background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.9)),
     url("garage.jpg");
     background-size:cover;
@@ -147,16 +148,7 @@ footer{
 }
 </style>
 </head>
-<script>
-function ouvrirMenu(){
-    let menu = document.getElementById("menuMobile");
-    if(menu.style.display === "block"){
-        menu.style.display = "none";
-    }else{
-        menu.style.display = "block";
-    }
-}
-</script>
+
 <body>
 <header>
 
@@ -230,7 +222,7 @@ Fleurance, Agen et alentours
 <li>✅ Toutes marques</li>
 </ul>
 </section>
-<section id="realisations>
+<section id="realisations">
 <h2>Réalisations</h2>
 <div class="photo">
 📸 Photos à venir
@@ -247,8 +239,8 @@ Votre satisfaction est ma priorité.
 ⭐ Donner votre avis
 </a>
 </div>
-</section id="contact">
-<section class="contact">
+</section>
+<section id="contact" class="contact">
 <h2>Contact</h2>
 <p>
 📞 06 51 04 80 69
@@ -265,5 +257,15 @@ Votre satisfaction est ma priorité.
     <a href="mentions-legales.html">Mentions légales</a>
     <a href="politique-confidentialite.html">Politique de confidentialité</a>
 </footer>
+<script>
+function ouvrirMenu(){
+    let menu = document.getElementById("menuMobile");
+    if(menu.style.display === "block"){
+        menu.style.display = "none";
+    }else{
+        menu.style.display = "block";
+    }
+}
+</script>
 </body>
 </html>
