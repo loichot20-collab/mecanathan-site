@@ -107,9 +107,10 @@ footer{
     color:#aaa;
 }
 .menu{
-    position:absolute;
+    position:fixed;
     top:20px;
     right:20px;
+    z-index:1000;
 }
 
 .menu button{
@@ -151,11 +152,14 @@ footer{
 
 <div class="menu">
     <button onclick="ouvrirMenu()">☰</button>
+
     <nav id="menuMobile">
-        <a href="#prestations">🔧 Prestations</a>
-        <a href="#realisations">🚗 Réalisations</a>
-        <a href="#avis">⭐ Avis Google</a>
-        <a href="#contact">📞 Contact</a>
+        <a href="index.html">🏠 Accueil</a>
+        <a href="prestations.html">🔧 Prestations</a>
+        <a href="realisations.html">📸 Réalisations</a>
+        <a href="avis.html">⭐ Avis clients</a>
+        <a href="apropos.html">👨‍🔧 À propos</a>
+        <a href="contact.html">📞 Contact</a>
     </nav>
 </div>
 
